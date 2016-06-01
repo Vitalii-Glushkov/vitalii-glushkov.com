@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
-		<title>Vitalii Glushkov - Personal web-site</title>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	    <meta name="description" content="Vitalii Glushkov. Front-End Developer">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="description" content="Vitalii Glushkov. Front-End Developer">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vitalii Glushkov - Personal web-site</title>
 		<!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> -->
 		<style type="text/css"></style>
 	</head>
 	<body>
 		<header class="general-header">
+		<div class="web-site-logo">vitalii glushkov</div>
 			<nav class="general-navigation">
 				<ul class="general-navigation__u-list">
 					<li class="general-navigation__u-list-item"><a class="general-navigation__link" href="" title="">about me</a></li>
@@ -19,9 +20,122 @@
 				</ul>
 			</nav>
 		</header>
-		<main></main>
-		<footer class="general-footer"></footer>
+		<main>
+			<section class="about-me">
+				<h2 class="about-me__header">about me</h2>
+				<p class="about-me__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro a amet doloribus, cupiditate aut cumque obcaecati vero consequuntur ea omnis repudiandae sapiente reiciendis inventore mollitia asperiores, officia accusamus sed illo sint commodi maiores voluptas voluptates magni. Adipisci officiis veniam rerum quod velit distinctio neque nihil quibusdam molestias laboriosam aspernatur dolorum saepe, ipsa deleniti accusamus, nesciunt temporibus deserunt a quaerat facilis! Cumque numquam, omnis tempore ad libero consectetur non quo. Aperiam maxime recusandae labore? Recusandae cumque ipsam perferendis deserunt consequatur nisi laboriosam eligendi repudiandae veritatis cupiditate explicabo ea eaque fuga quasi ab sunt, voluptatum esse autem harum unde, culpa. Delectus, soluta!</p>
+				<div class="about-me__social-acc">
+					<ul class="about-me__social-acc-list">
+						<li class="about-me__social-acc-link">Follow me on LinkedIn!</li>
+						<li class="about-me__social-acc-link">Follow me on Facebook!</li>
+						<li class="about-me__social-acc-link">Follow me on Twitter!</li>
+					</ul>
+				</div>
+				<div class="about-me__underline">
+					<img class="portfolio__image" src="" alt="Underline">
+				</div>
+			</section>
+			<section class="portfolio">
+				<h2 class="portfolio__header">portfolio</h2>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+				<a class="portfolio__link" href="">
+					<figure class="portfolio__figure">
+						<img class="portfolio__image" src="" alt="">
+					</figure>
+				</a>
+			</section>
+		</main>
+		<footer class="general-footer">
+			<section class="hire-me">
+				<h2 class="hire-me__header">get interested in me? hire me!</h2>
+				<p class="hire-me__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo error possimus dolorem unde modi dicta ipsam architecto necessitatibus cumque? Deserunt, omnis, ipsam adipisci tempora atque, tenetur ducimus quod, neque cupiditate eum quas! Aliquid explicabo consectetur temporibus vitae, quia possimus, sit quis ducimus iure, mollitia sapiente aperiam amet. Porro harum, debitis quis sunt deserunt eum quidem alias distinctio magnam molestiae, impedit sed placeat. Deleniti aut, soluta, placeat rerum sed nesciunt nulla cum, voluptatum voluptatibus quod quisquam.</p>
+				<div class="hire-me__image">
+					<a class="hire-me__link" href="">
+						<figure class="hire-me__figure">
+							<img class="hire-me__image" src="" alt="">
+						</figure>
+					</a>
+				</div>
+			</section>
+			<section class="contact-form">
+				<form class="contact-form__form" action="/echo" method="post">
+					<label class="contact-form__first-name-label" for="contact-form__first-name-input">What's your name?</label>
+					<div class="contact-form__decoration">
+						<input class="contact-form__first-name-input" type="text" name="firstName" placeholder="Enter your name here..." required>
+						<img class="contact-form__right-border-image" src="" alt="">
+						<img class="contact-form__bottom-border-image" src="" alt="">
+					</div>
+					<label class="contact-form__email-label" for="contact-form__email-input">Your E-Mail?</label>
+					<div class="contact-form__decoration">
+						<input class="contact-form__email-input" type="email" name="email" placeholder="Enter your e-mail address here..." required>			
+						<img class="contact-form__right-border-image" src="" alt="">
+						<img class="contact-form__bottom-border-image" src="" alt="">
+					</div>
+					<label class="contact-form__message-label" for="contact-form__textarea">Okay, What can I do for you, friend?</label>
+					<div class="contact-form__decoration">
+						<textarea class="contact-form__textarea" name="message" placeholder="Enter your question here..." required></textarea>
+						<img class="contact-form__right-border-image" src="" alt="">
+						<img class="contact-form__bottom-border-image" src="" alt="">
+					</div>
+					<div class="contact-form__decoration">
+						<input class="contact-form__submit-button" type="submit" value="Submit">
+						<img class="contact-form__ellipse-image" src="" alt="">
+					</div>
+				</form>
+			</section>
+			<section class="copyright">
+				<span class="copyright__info">&copy; vitalii-glushkov.com. Design by ChocoTemplates.com</span>
+			</section>
+		</footer>
+		<figure class="general-decoration__figure">
+			<img class="general-decoration__image" src="" alt="">
+		</figure>
+		<figure class="general-decoration__figure">
+			<img class="general-decoration__image" src="" alt="">
+		</figure>
+		<figure class="general-decoration__figure">
+			<img class="general-decoration__image" src="" alt="">
+		</figure>
+		<figure class="general-decoration__figure">
+			<img class="general-decoration__image" src="" alt="">
+		</figure>
+		<figure class="general-decoration__figure">
+			<img class="general-decoration__image" src="" alt="">
+		</figure>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript"></script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+	  <script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	    ga('create', 'UA-XXXXX-X', 'auto');
+	    ga('send', 'pageview');
+	  </script>
 	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script type="text/javascript"></script>
 </html>
